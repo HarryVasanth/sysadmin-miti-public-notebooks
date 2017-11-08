@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ username }}'s Jupyter Notebooks</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <main role="main">
+      <h1 class="text-center">{{ username.title() }}'s Public Jupyter Notebooks</h1>
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Filename</th>
+            <th scope="col">Public link</th>
+            <th scope="col">Download link</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in files %}
+          <tr>
+            <th scope="row">{{loop.index}}</th>
+            <td>{{ item }}</td>
+            <td>
+              <a href="https://nbviewer.jupyter.org/url/jh.m-iti.org/public_notebooks/{{ username }}/{{ item }}">{{ item }}</a>
+            </td>
+            <td>
+              <a href="https://jh.m-iti.org/public_notebooks/{{ username }}/{{ item }}">{{ item }}</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </main>
+    </div>
+  </body>
+</html>
