@@ -10,7 +10,9 @@ directory.
 Ubuntu Dependecies:
 
     sudo apt install python3-venv
-or 
+
+or
+
     sudo apt install python-virtualenv
 
     virtualenv venv
