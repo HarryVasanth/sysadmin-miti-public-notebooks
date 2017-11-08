@@ -15,6 +15,8 @@ or
 
     sudo apt install python-virtualenv
 
+Install the requirements with pip in the virtual environment
+
     virtualenv venv
     # or python3 -m venv venv 
     source venv/bin/activate
