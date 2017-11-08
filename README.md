@@ -7,7 +7,7 @@ directory.
 
 ### Install
 
-Ubuntu Dependecies:
+Ubuntu Dependencies:
 
     sudo apt install python3-venv
 
@@ -22,7 +22,7 @@ Install the requirements with pip in the virtual environment
     source venv/bin/activate
     pip install -r requirements.txt
 
-Adjust the config.py file to your needs.
+Adjust the 'config.py' file to your needs.
 
 ### Run
 
