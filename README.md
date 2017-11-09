@@ -59,4 +59,4 @@ This examples assumes an url such as https://www.example.org/public_notebooks/us
 
     # Modify the unit file accordingly with you environment
     # symlink it to /etc/systemd/system/publicNotebooks.service 
-    ln -s /opt/publicNotebooks.service /etc/systemd/system/publicNotebooks.service
+    ln -s /opt/publicNotebooks/publicNotebooks.service /etc/systemd/system/publicNotebooks.service
