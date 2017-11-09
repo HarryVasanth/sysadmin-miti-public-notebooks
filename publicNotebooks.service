@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve user's public Jupyter notebooks
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/opt/publicNotebooks
+Environment="PATH=/opt/publicNotebooks/venv/bin"
+ExecStart=/opt/publicNotebooks/venv/bin/uwsgi --ini pn_wsgi.ini
+
+[Install]
+WantedBy=multi-user.target
