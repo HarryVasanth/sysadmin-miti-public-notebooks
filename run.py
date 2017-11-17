@@ -6,7 +6,6 @@
     in the user home directory
 
     :copyright: (c) 2017 by Mattia Lambertini.
-    :license: GPL version 3
 """
 
 from flask import Flask
